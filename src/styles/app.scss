@@ -1,2 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'utils/variables';
 @import 'components/type';
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+    a{
+        color: var(--c-black);
+    }
+}
+
+/*variables*/
+:root{
+    --c-bg: #fff;
+    --c-lightBlue: #bedfff;
+    --c-midBlue: #889bd3;
+    --c-darkBlue: #424e74;
+    --c-purple: #ae8fb1;
+    --c-pink: #e6ddee;
+    --c-black: #000;
+}
+
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(190,223,255,1) 25%, rgba(136,155,211,1) 50%, rgba(174,143,177,1) 75%, rgba(230,221,238,1) 100%);    
+    
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    opacity: 70%;
+}
+
+
+/*body*/
+body{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    color: var(--c-black);
+}
+
+.title, .menu{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    align-items: center;
+    margin: auto;
+    margin-top: 31px;
+
+
+    &__nav{
+        justify-content: center;
+        
+        
+        ul{
+            display: inline-flex;
+
+            font-size: 16px;
+            font-weight: 500; //medium
+            text-transform: uppercase;
+            color: var(--c-black);
+
+            li{
+                margin-left: 64px;
+            }
+
+            .link--active:after{
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: var(--c-purple);
+                margin: auto;
+                margin-top: 8px;
+            }
+        }
+
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu__nav ul li:first-child{
+    margin-left: 0;
+}
+
+
+/*desktop*/
+@media(min-width: 768px){
+
+}
