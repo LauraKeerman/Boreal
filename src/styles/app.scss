@@ -65,6 +65,7 @@ body{
 
 .title--medium{
     text-transform: uppercase;
+    font-size: 31px;
 }
 
 
@@ -119,6 +120,13 @@ body{
     margin-left: 0;
 }
 
+
+//page info
+.spoil{
+    border-style: solid;
+    border-color: var(--c-darkBlue);
+    border-radius: 13px;
+}
 
 /*desktop*/
 @media(min-width: 768px){
