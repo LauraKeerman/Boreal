@@ -59,6 +59,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.title, .text{
+    color: var(--c-darkBlue);
+}
+
+.title--medium{
+    text-transform: uppercase;
+}
+
 
 
 .menu{
